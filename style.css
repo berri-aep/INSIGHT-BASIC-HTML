@@ -155,14 +155,13 @@ img {
 
 .header__nav{
     display: flex;
-    gap: 3rem;
     align-items: center;
 }
 
 .header a{
     color: var(--clr-light);
     transition: 0.5s ease;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.5rem;
 }
 
 .header.dark .container{
@@ -201,6 +200,10 @@ img {
 .homeBanner h1{
     font-size: var(--h1);
     color: var(--clr-light);
+}
+
+.homeBanner__btn{
+    
 }
 
 
@@ -332,7 +335,6 @@ img {
     border-radius: 20px;
     transition: 0.3s ease-in;
     flex-direction: column;
-    z-index: 9999;
     transform: translateY(5rem);
 }
 
@@ -361,15 +363,15 @@ textarea{
   height: 20rem;
   color: var(--clr-gray);
   font-family: var(--poppins);
-  border-radius: 5px;
 }
-
 
 input{
   display: flex;
   width: 100%;
   height: 4rem;
+  font-family: var(--poppins);
 }
+
 
 .contactSocial{
     display: flex;
