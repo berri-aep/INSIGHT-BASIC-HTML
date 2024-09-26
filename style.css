@@ -452,7 +452,7 @@ input{
 
     .contacts__title{
     padding-bottom: 2rem;
-}
+    }
 }
 
 /* FOOTER */
@@ -479,6 +479,13 @@ input{
     color: var(--clr-light);
     font-size: 2rem;
 }
+
+.footer__social{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 45rem;
+    }
 
 /* MOBILE RESPONSIVE FOR FOOTER */
 
