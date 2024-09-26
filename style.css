@@ -206,6 +206,21 @@ img {
     
 }
 
+/* MOBILE RESPONSIVE FOR HOMEBANNER */
+
+@media screen and (max-width: 520px){
+    .homeBanner h1{
+        font-size: 4rem;
+    }
+
+    .homeBanner__btn{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        padding: 0rem 3rem;
+    }
+}
+
 
 /* SERVICES */
 .services{
@@ -239,6 +254,17 @@ img {
     margin-left: 2rem;
 }
 
+/* MOBILE RESPONSIVE FOR SERVICES */
+
+@media screen and (max-width: 520px){
+    .services__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        
+    }
+}
+
 /* PROJECTS */
 .projects{
     padding: 5rem 0;
@@ -256,7 +282,6 @@ img {
     width: 63.3rem;
     height: 78.5rem;
     background-color: var(--clr-dark);
-    z-index: 9998;
     opacity: 40%;
     transition: .2s ease-in;
 } 
@@ -307,6 +332,24 @@ img {
     padding-bottom: 3rem;
     text-align: justify;
 }
+
+/* MOBILE RESPONSIVE FOR projects */
+
+@media screen and (max-width: 520px){
+    .projects__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .project__card span{
+        opacity: 0;
+    }
+
+    .project__card--detail{
+        opacity: 1;
+    }
+}
+
 
 /* CONTACTS */
 .contacts{
@@ -390,6 +433,28 @@ input{
     display: flex;
 }
 
+/* MOBILE RESPONSIVE FOR CONTACT */
+
+@media screen and (max-width: 520px){
+    .contacts__wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 6rem;
+    }
+    .contacts__card{
+    transform: translateY(0rem);
+    }
+
+    .contactSocial{
+        padding-top: .1rem;
+        padding-bottom: .2rem;
+    }
+
+    .contacts__title{
+    padding-bottom: 2rem;
+}
+}
+
 /* FOOTER */
 .footer{
     background-color: var(--clr-dark);
@@ -413,6 +478,33 @@ input{
 .footer__nav a{
     color: var(--clr-light);
     font-size: 2rem;
+}
+
+/* MOBILE RESPONSIVE FOR FOOTER */
+
+@media screen and (max-width: 520px){
+    .footer__wrapper{
+        flex-direction: column;
+    }
+
+    .footer__nav{
+        padding-bottom: 2rem;
+    }
+
+    .footer__wrapper p{
+        padding-top: 2rem;
+    }
+
+    .footer__social{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .footer__social img{
+        width: 15rem;
+    }
 }
 
 /* REPEATABLE CONTENT */
@@ -462,6 +554,16 @@ input{
     text-align: center;
 }
 
+
+/* MOBILE RESPONSIVE FOR CARD */
+
+@media screen and (max-width: 520px){
+
+    .card:hover{
+        scale: none;
+    }
+}
+
 .card{
     display: flex;
     background-color: var(--clr-light);
@@ -473,8 +575,12 @@ input{
 }
 
 .card:hover{
+
+    .card{
     scale: 1.1;
-    transition: 0.3s ease-in;
+    transition: 0.3s ease-in;        
+    }
+
     .btn.bg--card{
     background-color: var(--clr-red);
     color: var(--clr-light);
